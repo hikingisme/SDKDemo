@@ -1,0 +1,68 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.keemall.sdkdemo'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.keemall.sdkdemo"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    //bigo
+    implementation 'com.bigossp:bigo-ads:4.8.0'
+    //applovin MAX
+    implementation 'com.applovin:applovin-sdk:+'
+    //pangle
+    implementation 'com.pangle.global:ads-sdk:6.0.0.7'
+    //mtg
+    implementation 'com.mbridge.msdk.oversea:reward:16.7.51'
+    //如果您需要使用竞价广告,请添加此条依赖语句。(mbbid)
+    implementation 'com.mbridge.msdk.oversea:mbbid:16.7.51'
+    implementation 'com.mbridge.msdk.oversea:newinterstitial:16.7.51'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'cn.hutool:hutool-all:5.6.0'
+    /**
+     * 以下为kwai依赖
+     */
+
+    implementation "androidx.media3:media3-exoplayer:1.0.0-alpha01"
+    implementation "androidx.appcompat:appcompat:1.2.0"
+    implementation "com.google.android.material:material:1.2.1"
+    implementation "androidx.annotation:annotation:1.2.0"
+    // 最低支持 kotlin1.4.10
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
+    // gaid 最低支持play-services-ads-identifier:18.0.1
+    implementation "com.google.android.gms:play-services-ads-identifier:18.0.1"
+
+}
