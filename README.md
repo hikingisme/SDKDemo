@@ -30,11 +30,6 @@ dependencies {
     implementation 'com.mbridge.msdk.oversea:newinterstitial:16.7.51'
 
     implementation 'com.squareup.okhttp3:okhttp:4.12.0'
-    implementation 'cn.hutool:hutool-all:5.6.0'
-    /**
-     * 以下为kwai依赖
-     */
-
     implementation "androidx.media3:media3-exoplayer:1.0.0-alpha01"
     implementation "androidx.appcompat:appcompat:1.2.0"
     implementation "com.google.android.material:material:1.2.1"
