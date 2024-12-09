@@ -66,6 +66,7 @@ public class MyApplication extends Application {
                 "144002",
                 "7c22942b749fe6a6e361b675e96b3ee9",
                 List.of(
+                        // 格式为：UNIT_ID-PLACEMENT_ID
                         new AdPosition(AdType.REWARD, "462372-290651"),
                         new AdPosition(AdType.INTERSTITIAL, "462374-290653")
                 )));
@@ -73,8 +74,8 @@ public class MyApplication extends Application {
                 "",
                 "05TMDQ5tZabpXQ45_UTbmEGNUtVAzSTzT6KmWQc5_CuWdzccS4DCITZoL3yIWUG3bbq60QC_d4WF28tUC4gVTF",
                 List.of(
-                        new AdPosition(AdType.REWARD, "462372-290651"),
-                        new AdPosition(AdType.INTERSTITIAL, "462374-290653")
+                        new AdPosition(AdType.REWARD, "b0b2200f4b6b2857"),
+                        new AdPosition(AdType.INTERSTITIAL, "93bc365da6e8464e")
                 )));
         sdks.add(new SdkConfig(SdkName.KWAI, "899999", "EaCw0AipSYyvf3E7",List.of(
                 new AdPosition(AdType.REWARD, "8999996001"),
